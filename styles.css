@@ -3,10 +3,27 @@ body {
   background-color: #011F3F;
 }
 
+footer {
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  text-align: center;
+  margin: 3.5%;
+}
+
+.mysite {
+  color:  pink;
+  text-decoration: none;
+}
+
+.mysite:hover {
+  color:  #fff;
+  text-decoration: none;
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin:  4%;
   color: #FEF2BF;
 }
 
