@@ -15,14 +15,6 @@ $(document).keypress(function() {
   }
 });
 
-$(document).click(function() {
-  if (!started) {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
-
 $(".btn").click(function() {
 
   var userChosenColour = $(this).attr("id");
@@ -86,28 +78,3 @@ function startOver() {
   started = false;
 }
 
-// HELP
-var help = document.getElementById("help");
-
-// Get the button that opens the help
-var btn = document.getElementById("helpBtn");
-
-// Get the <span> element that closes the help
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the help
-btn.onclick = function() {
-  help.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the help
-span.onclick = function() {
-  help.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the help, close it
-window.onclick = function(event) {
-  if (event.target == help) {
-    help.style.display = "none";
-  }
-}
